@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.ListView?>
+
+<VBox xmlns:fx="todoit" fx:controller="todoit.control.HomeControl">
+    <children>
+        <HBox fx:id="boxHeader" alignment="CENTER"><children>
+            <Label fx:id="labelHeader" text="No Todo List loaded"/>
+        </children></HBox>
+
+        <HBox alignment="TOP_LEFT">
+            <children>
+                <Button fx:id="buttonNewList" onAction="#handleNewList">
+                    <tooltip><Tooltip text="New Todo List" /></tooltip>
+                </Button>
+
+                <Button fx:id="buttonOpenList" onAction="#handleOpenList">
+                    <tooltip><Tooltip text="Open Todo List" /></tooltip>
+                </Button>
+
+                <Button fx:id="buttonNewTodo" onAction="#handleNewTodo">
+                    <tooltip><Tooltip text="New Todo" /></tooltip>
+                </Button>
+
+                <Button fx:id="buttonEditTodo" onAction="#handleEditTodo">
+                    <tooltip><Tooltip text="Edit Todo" /></tooltip>
+                </Button>
+
+                <Button fx:id="buttonDeleteTodo" onAction="#handleDeleteTodo">
+                    <tooltip><Tooltip text="Delete Todo" /></tooltip>
+                </Button>
+            </children>
+        </HBox>
+
+        <ListView fx:id="listViewTodo" VBox.vgrow="ALWAYS" />
+
+        <HBox alignment="BOTTOM_CENTER">
+            <children>
+                <Button fx:id="buttonCancel" text="Cancel" onAction="#handleCancel" prefWidth="100.0" />
+                <Button fx:id="buttonConfirm" text="Confirm" onAction="#handleConfirm" prefWidth="100.0" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,28 @@
+#buttonNewList {
+    -fx-graphic: url("http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-9/24/new-file-icon.png");
+}
+
+#buttonOpenList {
+    -fx-graphic: url("http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-9/24/open-file-icon.png");
+}
+
+#buttonNewTodo {
+    -fx-graphic: url("http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-9/24/edit-file-icon.png");
+}
+
+#buttonEditTodo {
+    -fx-graphic: url("http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-9/24/edit-validated-icon.png");
+}
+
+#buttonDeleteTodo {
+    -fx-graphic: url("http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-9/24/edit-not-validated-icon.png");
+}
+
+#boxHeader {
+    background-color: darkblue;
+    -fx-background-color: darkblue;
+}
+
+#labelHeader {
+    -fx-text-fill: white;
+}
